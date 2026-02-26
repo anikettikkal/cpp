@@ -124,6 +124,7 @@ main()
 
     // 6.write a prog scan 10 numbers and count negative num and calculate sum of positive numbers
 
+    /*
     int a = 1, n, positiveNum = 0, negativeNum = 0;
 
     while (a <= 10)
@@ -143,4 +144,25 @@ main()
     }
     cout << positiveNum;
     cout << "\nNegative Number Count is " << negativeNum;
+    */
+
+
+
+    //7.write a loop of programe 1 to 100 and count number divisible by 5 and 7
+
+    int a=1,countFive=0,countSeven=0,noDivisible=0;
+    while(a<=100)
+    {
+        if(a%5==0)
+            countFive++;
+        else if(a%7==0)
+            countSeven++;
+        else
+            noDivisible++;
+        a++;
+    }
+    cout<<"\nCount of Number Divisible by 5 is ="<<countFive;
+    cout<<"\nCount of Number Divisible by 7 is ="<<countSeven;
+    cout<<"\nCount of Number Not Divisible by 5 and 7 is ="<<noDivisible;
+
 }
