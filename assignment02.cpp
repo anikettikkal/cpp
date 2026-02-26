@@ -150,6 +150,7 @@ main()
 
     //7.write a loop of programe 1 to 100 and count number divisible by 5 and 7
 
+    /*
     int a=1,countFive=0,countSeven=0,noDivisible=0;
     while(a<=100)
     {
@@ -164,5 +165,56 @@ main()
     cout<<"\nCount of Number Divisible by 5 is ="<<countFive;
     cout<<"\nCount of Number Divisible by 7 is ="<<countSeven;
     cout<<"\nCount of Number Not Divisible by 5 and 7 is ="<<noDivisible;
+    */
 
+
+    //8.write prog which print all leap year between 1995 to 2025 and count total leap year
+
+    /*
+    int year=1995 , leapYearCount=0;
+    while(year<=2025)
+    {
+        if(year%4==0)
+        {
+            cout<<year<<endl;
+            leapYearCount++;
+        }
+        year++;
+    }
+    cout<<"\nTotal Count of Leap Year between 1995 to 2025 is ="<<leapYearCount;
+    */
+
+
+    //9.write a prgm which print fibonacci series and count total fibonacci number
+
+    /*
+    int a=0,b=1,fibo=1,n,countFibo=0;
+    cout<<"\nEnter Number";
+    cin>>n;
+    cout<<endl<<a;
+    cout<<endl<<b;
+    while(fibo<=n)
+    {
+        cout<<endl<<fibo;
+        a=b;
+        b=fibo;
+        fibo=a+b;
+        countFibo++;
+    }
+    cout<<"\nTotal Count of Fibonacci Number is ="<<countFibo;
+
+    */
+
+    //10.Write a Prgm scan number and calculate the sum of digits and print the unit places
+
+    int sum=0,n;
+    cout<<"\nEnter Number";
+    cin>>n;
+    while(n>0)
+    {
+        sum=sum+ n%10;
+        cout<<"\nUnit Place is ="<<n%10;
+        n=n/10;
+    }
+    cout<<"\nSum of Digits is ="<<sum;
 }
