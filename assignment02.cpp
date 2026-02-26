@@ -90,9 +90,9 @@ main()
     }
     */
 
+    // 4.scan number and print factorial of number like 1*2*3*4
 
-    //4.
-
+    /*
     int a=1,fact=1,n;
     cout<<"\nEnter Number";
     cin>>n;
@@ -103,4 +103,44 @@ main()
         a++;
     }
     cout<<"\nFactorial of number is "<<fact;
+    */
+
+    // 5. write a prog scan value x and y perform x^y
+
+    /*
+    int x, y, result = 1;
+    cout<<"\nEnter Value of x (base)";
+    cin>>x;
+    cout<<"\nEnter Value of y (power)";
+    cin>>y;
+
+    while(y>0)
+    {
+        result=result*x;
+        y--;
+    }
+    cout<<"\nResult of x^y is "<<result;
+    */
+
+    // 6.write a prog scan 10 numbers and count negative num and calculate sum of positive numbers
+
+    int a = 1, n, positiveNum = 0, negativeNum = 0;
+
+    while (a <= 10)
+    {
+        cout << "\nEnter 10 Numbers i.e positive and negative";
+        cin >> n;
+        if (n > 0)
+        {
+            cout << "\nPositive Number";
+            positiveNum = positiveNum + n;
+        }
+        else
+        {
+            negativeNum++;
+        }
+        a++;
+    }
+    cout << positiveNum;
+    cout << "\nNegative Number Count is " << negativeNum;
 }
