@@ -72,8 +72,9 @@ main()
     }
     */
 
-    // write a prog which prints odd series from 1 to n and  even series from 2 to n
+    // 3.write a prog which prints odd series from 1 to n and  even series from 2 to n
 
+    /*
     int n, a = 1, b = 2;
     cout << "\nEnter Number";
     cin >> n;
@@ -87,4 +88,19 @@ main()
         cout<<endl<<"Even Numbers"<<b;
         b=b+2;
     }
+    */
+
+
+    //4.
+
+    int a=1,fact=1,n;
+    cout<<"\nEnter Number";
+    cin>>n;
+    while(a<=n)
+    {
+        fact=fact*a;
+        cout<<a<<"*";
+        a++;
+    }
+    cout<<"\nFactorial of number is "<<fact;
 }
