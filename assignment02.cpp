@@ -1,8 +1,8 @@
 using namespace std;
-#include<iostream>
+#include <iostream>
 main()
 {
-    //1. write prog which create menu +,-,*,/
+    // 1. write prog which create menu +,-,*,/
     /*
     char ch,choice;
     cout<<"\nChoice Operator +,-,*,/";
@@ -28,9 +28,9 @@ main()
     cout<<"\nEnd main Programe";
     */
 
+    // 2. write prog scan number between 0 to 10
 
-    //2. write prog scan number between 0 to 10
-
+    /*
     int number,choice;
     cout<<"\nEnter Choice number Between 0 to 10";
     cout<<"\nEnter Number";
@@ -69,5 +69,22 @@ main()
             break;
         default:
             cout<<"Invalid Number";
+    }
+    */
+
+    // write a prog which prints odd series from 1 to n and  even series from 2 to n
+
+    int n, a = 1, b = 2;
+    cout << "\nEnter Number";
+    cin >> n;
+    while (a <= n)
+    {
+        cout <<endl<<"Odd Numbers"<< a;
+        a = a + 2;
+    }
+    while(b<=n)
+    {
+        cout<<endl<<"Even Numbers"<<b;
+        b=b+2;
     }
 }
