@@ -78,5 +78,28 @@ int main()
 
     //============================= array prgm start==================
 
+    /*
+    4.Write a prgm scan array and calculate odd even number sum seprate
+    */
+
+    int a[5],i,n,even_sum=0,odd_sum=0;
+    cout<< "Enter n numbers: ";
+    cin>>n;
+
+    for(i=0;i<n;i++){
+        cout<<"a["<<i<<"]"<<" = ";
+        cin>>a[i];
+        if(a[i]%2==0){
+            cout<< a[i]<<" is even number\n";
+            even_sum= even_sum + a[i];
+        }
+        else{
+            cout<< a[i]<<" is odd number\n";
+            odd_sum= odd_sum + a[i];
+        }
+    }
+    cout<<"sum of even numbers is =" <<even_sum<<endl;
+    cout<<"sum of odd numbers is =" <<odd_sum<<endl;
+
     return 0;
 }
