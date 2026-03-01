@@ -4,7 +4,7 @@ using namespace std;
 int main(){
 
     /*
-    write a prog which print pattern
+    1.write a prog which print pattern
     1
     1 2 
     1 2 3
@@ -19,10 +19,18 @@ int main(){
     cin>>n;
     for(i=1;i<=n;i++){
         for(j=1;j<=i;j++){
-            cout<<j<<" * ";
+            cout<< j<<" ";
         }
         cout<<"\n";
     }
 
+    for(i=n-1; i>=1;i--){
+        for(j=1;j<=i;j++){
+            cout<< j<<" ";
+        }
+        cout<<"\n";
+    }
+
+    
     return 0;
 }
