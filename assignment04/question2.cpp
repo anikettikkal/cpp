@@ -1,3 +1,6 @@
+/*2.scan array 
+scan number and count how many times number is found in array
+*/
 #include<iostream>
 using namespace std;
 main(){
